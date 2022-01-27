@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">todo list.</h1>
+    </header>
+    <main>
+        <input type="text" id="input" placeholder="Add your task">
+        <button id="add" class="btn">Add</button>
+    </main>
+
+    <section class="list">
+        <ul class="mainlist">
+            <li class="list-item">
+                <h3 class="li-item">Good Morning</h3>
+                <div class="btns">
+                    <button onclick="taskDone(this)" class="done btn"><i class="material-icons">radio_button_unchecked</i></button>
+                    <button onclick="editItem(this)" class="done btn edit"><i class="material-icons">edit</i></button>
+                    <button onclick="removeItem(this)" class="done btn delete"><i class="material-icons">delete</i></button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="ft-container">
+            <!-- <img src="./imgs/fb.svg" alt="" class="ft-img"> -->
+            <img onclick="toInsta()" src="./imgs/insta.svg" alt="" class="ft-img insta">
+            <img onclick="toTwitter()" src="./imgs/twitter.svg" alt="" class="ft-img twitter">
+            <!-- <img src="./imgs/Linkedin.svg" alt="" class="ft-img"> -->
+        </div>
+        <p class="ft-p">Copyright ©2020 All rights reserved </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

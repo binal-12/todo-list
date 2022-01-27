@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root{
+    --bacground-dark : #E5E5E5;
+    --green: #69C761;
+}
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bacground-dark);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.logo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+main{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 60px;;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#input{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 500px;
+    padding-left: 25px;
+    font-size: 1.2em;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#add {
+    height: 50px;
+    width: 85px;
+    background-color: var(--green);
+}
+
+#add:hover{
+    background-color: #35942e;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 600px;
+    background-color: #d6d6d6;
+    margin: 0 auto;
+    list-style: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+.li-item{
+    font-size: 1.2em;
+}
+.mainlist{
+    margin-bottom: 150px;
+}
+
+.done{
+    height: 35px;
+    width: 40px;
+    background-color: #5893dd;
+    margin-right: 7px;
+    font-size: 14px;
+    transition: all 1s;
+}
+
+.delete{
+    width: 40px;
+    background-color: #dc3545;;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+}
+
+.edit{
+    width: 40px;
+    background-color: #ffc107;
+    transition: all 1s;
+}
+
+.message{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 400px;
+    margin-bottom: 100px;
+}
+
+.tempInput{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: fit-content;
+    padding-left: 25px;
+    font-size: 1.2em;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin: 65px 0;
+}
+
+.ft-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ft-img{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE STYLING */
+
+@media only screen and (max-width:700px){
+    #input{
+        height: 40px;
+        width: 220px;
+    }
+
+    #add{
+        height: 40px;
+        width: 65px;
+    }
+
+    li{
+        width: 300px;
+        height: 40px;   
+    }
+
+    .done{
+        transform: scale(0.8);
+        margin: 0;
+    }
+
+    .tempInput{
+        width: 150px;
+        padding-left: 10px;
+        height: 30px;
+    }
+}
